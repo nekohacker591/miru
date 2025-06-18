@@ -28,7 +28,7 @@ export default defineConfig({
     }
   },
   server: {
-    port: 80,
+    port: 8080,
     allowedHosts: ['miru-vz3c.onrender.com']
   },
   build: {
