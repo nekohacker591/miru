@@ -27,7 +27,10 @@ export default defineConfig({
       'bittorrent-tracker/lib/client/websocket-tracker.js': resolve(import.meta.dirname, 'node_modules/bittorrent-tracker/lib/client/websocket-tracker.js')
     }
   },
-  server: { port: 7344 },
+  server: {
+    port: 80,
+    allowedHosts: ['miru-vz3c.onrender.com']
+  },
   build: {
     target: 'esnext',
     sourcemap: true
